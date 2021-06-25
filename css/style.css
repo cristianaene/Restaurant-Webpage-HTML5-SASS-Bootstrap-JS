@@ -59,10 +59,11 @@ h3, h6 {
   font-weight: bolder;
 }
 
-/*footer styling starts here*/
+/*footer styling starts here */
 footer {
   background-color: black;
   border-top: 0.2em solid #3f3f3f;
+  margin-top: 2em;
 }
 
 footer h4 {

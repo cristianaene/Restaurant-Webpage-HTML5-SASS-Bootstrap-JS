@@ -1,0 +1,9 @@
+h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 a:hover {
+  color: gray;
+}
+/*# sourceMappingURL=reviews.css.map */

@@ -53,10 +53,11 @@ h3 {
 h3, h6 {
     font-weight: bolder;
 }
-/*footer styling starts here*/
+/*footer styling starts here */
 footer {
     background-color: black;
     border-top: 0.2em solid rgb(63, 63, 63);
+    margin-top: 2em;
     h4 {
         font-family: 'Libre Barcode 128 Text', cursive;
         font-size: 2em;
@@ -73,11 +74,12 @@ footer {
         margin-bottom: 0;
         
         a {
+            text-decoration: none;
+            color: lightgrey;
+
             &:hover {
-            color: gray;    
-                }
-                text-decoration: none;
-                color: lightgrey;
+                color: gray;    
             }
+        }     
     }
 }
