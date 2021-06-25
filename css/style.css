@@ -90,4 +90,19 @@ footer p a {
 footer p a:hover {
   color: gray;
 }
+
+/*enable image animation for large screens*/
+@media (min-width: 992px) {
+  .imgandtext img {
+    margin-bottom: 0.5em;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+  }
+  .imgandtext img:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
 /*# sourceMappingURL=style.css.map */
