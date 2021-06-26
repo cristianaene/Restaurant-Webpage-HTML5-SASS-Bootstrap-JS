@@ -32,7 +32,7 @@ header h1 {
 .carousel-inner h5, .carousel-inner p {
   color: white;
   font-family: 'Roboto Condensed', sans-serif;
-  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.89);
+  text-shadow: 0 0 2em rgba(0, 0, 0, 0.89);
 }
 
 /*container styling starts here*/
@@ -47,8 +47,8 @@ h3 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.46);
-  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: 0 0 0.6em 0.1em rgba(0, 0, 0, 0.46);
+          box-shadow: 0 0 0.6em 0.1em rgba(0, 0, 0, 0.46);
 }
 
 .imgandtext h6 {

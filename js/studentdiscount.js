@@ -1,5 +1,7 @@
+// We assume that current js file is loaded after invoiceCalculator.js
+
 /** 
- * calculates customer invoice
+ * calculates the student invoice after applying a 10% discount to ordered meals
  * 
  * @starterPrice - the price of an ordered starter
  * @maindishPrice - the price of an ordered main dish
@@ -8,48 +10,19 @@
  * returns the total of the invoice
  */
  function studentInvoice (starterPrice, maindishPrice, dessertPrice, beveragePrice) {
-    let total = calculateInvoice (starterPrice, maindishPrice, dessertPrice, 0);
-    return total.toFixed(2); // rounds the price to two decimals
+    let totalMeals = starterPrice + maindishPrice + dessertPrice;
+    let discount = totalMeals * 10 / 100;
+    let dicountedInvoice = totalMeals - discount + beveragePrice;
+    return dicountedInvoice.toFixed(2);
 }
 
 
+// function call for student discounted invoices
+let studentInvoice1 = studentInvoice(figgSaladPrice, steakPrice, pancakesPrice, fizzyLemonadePrice);
+console.log("Total: " + studentInvoice1  +  "\n  Thank you!");
 
-// price definition
+let studentInvoice2 = studentInvoice(capreseSaladPrice, seaBreamPrice, cremeBruleePrice, craftBeerPrice);
+console.log("Total: " + studentInvoice2  + "\n  Thank you!");
 
-let bearGarlicMoussePrice = 12.90;
-let musselsPrice = 20.90;
-let churrosPrice = 7.90;
-let craftBeerPrice = 6;
-
-//function call
-let invoice = calculateInvoice(bearGarlicMoussePrice, musselsPrice, churrosPrice, 2 * craftBeerPrice);
-
-// printing the result in the console
-console.log("Bill total: " + invoice);
-
-// defining the prices of the remaining products dishes + drinks
-let figgSaladPrice = 14.90;
-let capreseSaladPrice = 15.00;
-let salmonTartarePrice = 14.90;
-
-let seaBreamPrice = 22.90;
-let steakPrice = 32.00;
-let vongolePrice = 25.00;
-
-let cremeBruleePrice = 8.90;
-let pancakesPrice = 7.90;
-let strawberryMoussePrice = 12.00;
-
-let coffeePrice = 5.00;
-let fizzyLemonadePrice = 9.90;
-let winePrice = 10.90;
-
-// calling the function with different parameters
-let invoice2 = calculateInvoice(figgSaladPrice, steakPrice, cremeBruleePrice, coffeePrice);
-let invoice3 = calculateInvoice(capreseSaladPrice, seaBreamPrice, pancakesPrice,fizzyLemonadePrice);
-let invoice4 = calculateInvoice(salmonTartarePrice, vongolePrice, strawberryMoussePrice,winePrice);
-
-// printing the invoices in the console
-console.log("Bill total: " + invoice2);
-console.log("Bill total: " + invoice3);
-console.log("Bill total: " + invoice4);
+let studentInvoice3 = studentInvoice(salmonTartarePrice, vongolePrice, strawberryMoussePrice, coffeePrice);
+console.log("Total: " + studentInvoice3  + "\n  Thank you!");

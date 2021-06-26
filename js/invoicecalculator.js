@@ -19,11 +19,11 @@ let musselsPrice = 20.90;
 let churrosPrice = 7.90;
 let craftBeerPrice = 6;
 
-//function call
+// function call
 let invoice = calculateInvoice(bearGarlicMoussePrice, musselsPrice, churrosPrice, 2 * craftBeerPrice);
 
 // printing the result in the console
-console.log("Bill total: " + invoice);
+console.log("Bill total: " + invoice + "\n  Thank you!");
 
 // defining the prices of the remaining products dishes + drinks
 let figgSaladPrice = 14.90;
@@ -48,7 +48,6 @@ let invoice3 = calculateInvoice(capreseSaladPrice, seaBreamPrice, pancakesPrice,
 let invoice4 = calculateInvoice(salmonTartarePrice, vongolePrice, strawberryMoussePrice,winePrice);
 
 // printing the invoices in the console
-console.log("Bill total: " + invoice2);
-console.log("Bill total: " + invoice3);
-console.log("Bill total: " + invoice4);
-
+console.log("Bill total: " + invoice2 + "\n  Thank you!");
+console.log("Bill total: " + invoice3 + "\n  Thank you!");
+console.log("Bill total: " + invoice4 + "\n  Thank you!");
